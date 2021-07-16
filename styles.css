@@ -88,6 +88,11 @@ a {
 section {
   padding: 5em 0;
 }
+
+.sub-card {
+  background-color: var(--card-bg-color);
+  border-radius: 1em;
+}
 /* / GLOBAL STYLES */
 
 /* INTRO */
@@ -110,10 +115,14 @@ section {
 
 /* SKILLS */
 .skills .card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2em;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+}
+
+.skills .sub-card {
+  display: grid;
+  place-items: center;
 }
 /* / SKILLS */
 
