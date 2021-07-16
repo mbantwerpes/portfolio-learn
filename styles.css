@@ -179,12 +179,13 @@ textarea {
 
 /* SKILLS */
 .skills .card {
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+  gap: 1.3em;
+  grid-template-columns: repeat(auto-fit, 4em);
 }
 
 .skills .sub-card {
   place-items: center;
+  font-size: 0.5em;
 }
 /* / SKILLS */
 
