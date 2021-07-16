@@ -95,10 +95,31 @@ section {
 
 input {
   width: 100%;
-  padding: 12px 20px;
   display: inline-block;
   border: 1px solid #ccc;
+  padding: 0.75em 1.25em;
   border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid #ccc;
+  padding: 0.75em 1.25em;
+  border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+  font-family: var(--ff);
+}
+::-moz-placeholder {
+  font-family: var(--ff);
+}
+:-ms-input-placeholder {
+  font-family: var(--ff);
+}
+:-moz-placeholder {
+  font-family: var(--ff);
 }
 
 .card,
