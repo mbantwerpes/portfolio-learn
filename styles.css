@@ -29,3 +29,62 @@ img {
   --fw-bold: 500;
 }
 /* / VARIABLES */
+
+/* GLOBAL STYLES */
+html,
+body {
+  font-family: var(--ff);
+  font-weight: var(--fw-bold);
+  color: var(--text-color);
+  width: 100vw;
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 3em;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.accent-text {
+  color: var(--accent-color);
+}
+
+a {
+  color: var(--accent-color);
+  font-weight: var(--fw-bold);
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.7em 2em;
+  border-radius: 5em;
+  text-decoration: none;
+}
+
+section {
+  padding: 5em 0;
+}
+/* / GLOBAL STYLES */
