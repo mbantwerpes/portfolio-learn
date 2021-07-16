@@ -201,7 +201,6 @@ textarea {
 /* / SKILLS */
 
 /* PROJECTS */
-
 .projects .card {
   gap: 2em;
   grid-template-columns: repeat(auto-fit, 1fr);
@@ -220,7 +219,6 @@ textarea {
   display: flex;
   gap: 1.3em;
 }
-
 /* / PROJECTS */
 
 /* CONTACT */
@@ -237,7 +235,7 @@ textarea {
   font-size: 0.8em;
 }
 
-.contact p {
+.contact .sub-card p {
   margin: 0;
   font-size: 0.7em;
   color: var(--intro-sub-text-color);
