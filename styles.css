@@ -282,13 +282,45 @@ textarea {
     "contact-name"
     "contact-email"
     "contact-subject"
-    "contact-message";
+    "contact-message"
+    "contact-btn";
   gap: 1.5em;
+}
+
+.contact-name {
+  grid-area: contact-name;
+}
+
+.contact-email {
+  grid-area: contact-email;
+}
+
+.contact-subject {
+  grid-area: contact-subject;
+}
+
+.contact-message {
+  grid-area: contact-message;
+}
+
+.contact-btn {
+  grid-area: contact-btn;
 }
 
 .contact-mail-icon {
   width: 2em;
 }
+
+/* @media only screen and (min-width: 62.5em) {
+  .contact .input-group {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "contact-name contact-email"
+      "contact-subject contact-subject"
+      "contact-message contact-message"
+      ". contact-btn";
+  }
+} */
 /* / CONTACT */
 
 /* FOOTER */
