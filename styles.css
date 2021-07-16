@@ -181,6 +181,25 @@ textarea {
   color: var(--intro-sub-text-color);
   margin-bottom: 2.5em;
 }
+
+@media only screen and (min-width: 62.5em) {
+  .intro > .container {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .profile-pic {
+    width: 20em;
+    height: 20em;
+    margin-right: 3em;
+    margin-bottom: 0;
+    box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+  }
+
+  .intro h1 {
+    margin: 0;
+  }
+}
 /* / INTRO */
 
 /* SKILLS */
