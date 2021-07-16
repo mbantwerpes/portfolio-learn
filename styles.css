@@ -88,3 +88,17 @@ section {
   padding: 5em 0;
 }
 /* / GLOBAL STYLES */
+
+/* INTRO */
+.intro > .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+}
+/* / INTRO */
