@@ -89,6 +89,14 @@ section {
   padding: 5em 0;
 }
 
+input {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 .card,
 .sub-card {
   background-color: var(--card-bg-color);
