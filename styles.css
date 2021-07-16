@@ -192,6 +192,11 @@ textarea {
   place-items: center;
   font-size: 0.5em;
 }
+
+.skills .sub-card img {
+  margin-top: 0.5em;
+  width: 5em;
+}
 /* / SKILLS */
 
 /* PROJECTS */
