@@ -195,9 +195,13 @@ textarea {
 /* / SKILLS */
 
 /* PROJECTS */
+.projects {
+  font-size: 0.65em;
+}
+
 .projects .card {
   gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  grid-template-columns: repeat(auto-fit, 1fr);
 }
 
 .projects .sub-card {
@@ -206,6 +210,12 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+
+.projects-links {
+  display: flex;
+  gap: 1.3em;
+}
+
 /* / PROJECTS */
 
 /* CONTACT */
@@ -214,6 +224,18 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contact a {
+  margin-top: 2em;
+  color: var(--text-color);
+  font-size: 0.8em;
+}
+
+.contact p {
+  margin: 0;
+  font-size: 0.7em;
+  color: var(--intro-sub-text-color);
 }
 
 .contact .input-group {
@@ -237,6 +259,7 @@ footer {
 }
 
 footer p {
+  font-size: 0.85em;
   margin: 0;
 }
 /* / FOOTER */
