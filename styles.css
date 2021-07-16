@@ -88,3 +88,56 @@ section {
   padding: 5em 0;
 }
 /* / GLOBAL STYLES */
+
+/* INTRO */
+.intro > .container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+}
+/* / INTRO */
+
+/* SKILLS */
+.skills .card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+/* / SKILLS */
+
+/* PROJECTS */
+.projects .sub-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* / PROJECTS */
+
+/* CONTACT */
+.contact .sub-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .input-group {
+  display: grid;
+  /* Area for mobile, media query needed to change the layout for bigger screens 
+  Used named areas due to the fact that I only want to put name and email side by side later */
+  grid-template-areas:
+    "contact-name"
+    "contact-email"
+    "contact-subject"
+    "contact-message";
+  gap: 1.5em;
+}
+/* / CONTACT */
