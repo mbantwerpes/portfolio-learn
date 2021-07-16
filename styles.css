@@ -23,6 +23,7 @@ img {
   --card-bg-color: #ffffff;
   --accent-color: #8444df;
   --text-color: #333333;
+  --intro-sub-text-color: #5f6f81;
 
   --ff: "Poppins", sans-serif;
   --fw-normal: 300;
@@ -100,6 +101,10 @@ section {
 
 .profile-pic {
   border-radius: 50%;
+}
+
+.intro-sub-header {
+  color: var(--intro-sub-text-color);
 }
 /* / INTRO */
 
