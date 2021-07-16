@@ -172,6 +172,7 @@ textarea {
 .profile-pic {
   border-radius: 50%;
   width: 15.625em;
+  height: 15.625em;
   margin-bottom: 2em;
   box-shadow: 12px 0 #d9c8f1;
 }
