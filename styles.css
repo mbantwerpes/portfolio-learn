@@ -253,6 +253,10 @@ textarea {
     "contact-message";
   gap: 1.5em;
 }
+
+.contact-mail-icon {
+  width: 2em;
+}
 /* / CONTACT */
 
 /* FOOTER */
