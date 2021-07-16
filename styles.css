@@ -102,3 +102,12 @@ section {
   border-radius: 50%;
 }
 /* / INTRO */
+
+/* SKILLS */
+.skills .card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+/* / SKILLS */
