@@ -55,8 +55,22 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin-bottom: 3em;
+  letter-spacing: 0.1em;
+}
+
+.section-small-header {
+  font-size: 0.6em;
+}
+
+.section-small-header::before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid black;
+  width: 4em;
+  margin-right: 1em;
+  transform: translateY(-3px);
 }
 
 p {
