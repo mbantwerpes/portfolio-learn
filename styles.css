@@ -131,7 +131,8 @@ section {
 
 .contact .input-group {
   display: grid;
-  /* Area for mobile, media query needed to change the layout for bigger screens */
+  /* Area for mobile, media query needed to change the layout for bigger screens 
+  Used named areas due to the fact that I only want to put name and email side by side later */
   grid-template-areas:
     "contact-name"
     "contact-email"
