@@ -195,9 +195,6 @@ textarea {
 /* / SKILLS */
 
 /* PROJECTS */
-.projects {
-  font-size: 0.65em;
-}
 
 .projects .card {
   gap: 2em;
@@ -209,6 +206,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 0.8em;
 }
 
 .projects-links {
