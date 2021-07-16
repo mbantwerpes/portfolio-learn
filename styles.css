@@ -120,3 +120,23 @@ section {
   align-items: center;
 }
 /* / PROJECTS */
+
+/* CONTACT */
+.contact .sub-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .input-group {
+  display: grid;
+  /* Area for mobile, media query needed to change the layout for bigger screens */
+  grid-template-areas:
+    "contact-name"
+    "contact-email"
+    "contact-subject"
+    "contact-message";
+  gap: 1.5em;
+}
+/* / CONTACT */
