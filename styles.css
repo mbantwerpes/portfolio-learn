@@ -16,3 +16,16 @@ img {
   max-width: 100%;
 }
 /* / RESET */
+
+/* VARIABLES */
+:root {
+  --bg-color: #f7f7f7;
+  --card-bg-color: #ffffff;
+  --accent-color: #8444df;
+  --text-color: #333333;
+
+  --ff: "Poppins", sans-serif;
+  --fw-normal: 300;
+  --fw-bold: 500;
+}
+/* / VARIABLES */
