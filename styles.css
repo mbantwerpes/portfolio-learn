@@ -23,6 +23,7 @@ img {
   --card-bg-color: #ffffff;
   --accent-color: #8444df;
   --text-color: #333333;
+  --intro-sub-text-color: #5f6f81;
 
   --ff: "Poppins", sans-serif;
   --fw-normal: 300;
@@ -54,8 +55,22 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   margin-bottom: 3em;
+  letter-spacing: 0.1em;
+}
+
+.section-small-header {
+  font-size: 0.6em;
+}
+
+.section-small-header::before {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid black;
+  width: 4em;
+  margin-right: 1em;
+  transform: translateY(-3px);
 }
 
 p {
@@ -77,15 +92,71 @@ a {
 }
 
 .btn {
+  padding: 0.875em 2.5em;
+  font-size: 0.9rem;
+  border: none;
   background-color: var(--accent-color);
   color: white;
-  padding: 0.7em 2em;
-  border-radius: 5em;
+  letter-spacing: 1px;
+  border-radius: 2.5em;
+  width: 8.75em;
+  margin: 0 auto;
   text-decoration: none;
 }
 
+ul {
+  list-style: disc inside;
+  padding-left: 1.3em;
+}
+
 section {
-  padding: 5em 0;
+  padding: 4em 0;
+}
+
+input {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 0.75em 1.25em;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid #ccc;
+  padding: 0.75em 1.25em;
+  border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+  font-family: var(--ff);
+}
+::-moz-placeholder {
+  font-family: var(--ff);
+}
+:-ms-input-placeholder {
+  font-family: var(--ff);
+}
+:-moz-placeholder {
+  font-family: var(--ff);
+}
+
+.card,
+.sub-card {
+  background-color: var(--card-bg-color);
+  border-radius: 1em;
+  box-shadow: 0px 4px 8px rgb(134 151 168 / 10%);
+  border: 1px solid #eee;
+  display: grid;
+}
+
+.card {
+  padding: 2em;
+}
+
+.sub-card {
+  padding: 0.5em;
 }
 /* / GLOBAL STYLES */
 
@@ -100,25 +171,56 @@ section {
 
 .profile-pic {
   border-radius: 50%;
+  width: 15.625em;
+  height: 15.625em;
+  margin-bottom: 2em;
+  box-shadow: 12px 0 #d9c8f1;
+}
+
+.intro-sub-header {
+  color: var(--intro-sub-text-color);
+  margin-bottom: 2.5em;
 }
 /* / INTRO */
 
 /* SKILLS */
 .skills .card {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2em;
+  gap: 1.3em;
+  grid-template-columns: repeat(auto-fit, 4em);
+}
+
+.skills .sub-card {
+  place-items: center;
+  font-size: 0.5em;
+}
+
+.skills .sub-card img {
+  margin-top: 0.5em;
+  width: 5em;
 }
 /* / SKILLS */
 
 /* PROJECTS */
+
+.projects .card {
+  gap: 2em;
+  grid-template-columns: repeat(auto-fit, 1fr);
+}
+
 .projects .sub-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 0.8em;
+  padding: 1em 0.7em;
 }
+
+.projects-links {
+  display: flex;
+  gap: 1.3em;
+}
+
 /* / PROJECTS */
 
 /* CONTACT */
@@ -127,6 +229,18 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contact a {
+  margin-top: 2em;
+  color: var(--text-color);
+  font-size: 0.8em;
+}
+
+.contact p {
+  margin: 0;
+  font-size: 0.7em;
+  color: var(--intro-sub-text-color);
 }
 
 .contact .input-group {
@@ -140,4 +254,21 @@ section {
     "contact-message";
   gap: 1.5em;
 }
+
+.contact-mail-icon {
+  width: 2em;
+}
 /* / CONTACT */
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: var(--card-bg-color);
+  padding: 1em;
+}
+
+footer p {
+  font-size: 0.85em;
+  margin: 0;
+}
+/* / FOOTER */
