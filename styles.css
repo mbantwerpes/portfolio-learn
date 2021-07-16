@@ -86,7 +86,7 @@ a {
 }
 
 section {
-  padding: 5em 0;
+  padding: 4em 0;
 }
 
 input {
@@ -122,10 +122,14 @@ input {
 
 .profile-pic {
   border-radius: 50%;
+  width: 15.625em;
+  margin-bottom: 2em;
+  box-shadow: 12px 0 #d9c8f1;
 }
 
 .intro-sub-header {
   color: var(--intro-sub-text-color);
+  margin-bottom: 2.5em;
 }
 /* / INTRO */
 
