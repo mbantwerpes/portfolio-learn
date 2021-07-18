@@ -311,16 +311,16 @@ textarea {
   width: 2em;
 }
 
-/* @media only screen and (min-width: 62.5em) {
+@media only screen and (min-width: 62.5em) {
   .contact .input-group {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "contact-name contact-email"
       "contact-subject contact-subject"
       "contact-message contact-message"
-      ". contact-btn";
+      "contact-btn contact-btn";
   }
-} */
+}
 /* / CONTACT */
 
 /* FOOTER */
