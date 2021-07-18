@@ -160,6 +160,16 @@ textarea {
 }
 /* / GLOBAL STYLES */
 
+/* SIDEMENU */
+.side-menu {
+  height: 100vh;
+  background-color: var(--accent-color);
+  position: fixed;
+  width: 6%;
+  left: 0;
+}
+/* / SIDEMENU */
+
 /* INTRO */
 .intro > .container {
   text-align: center;
