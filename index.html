@@ -6,23 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" />
   </head>
   <body>
     <!-- MAIN -->
     <main>
       <aside class="side-menu">
+        <p class="logo">HP</p>
         <nav>
           <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
+            <li>
+              <a href="#intro"><i class="lni lni-home"></i></a>
+            </li>
+            <li>
+              <a href="#about"><i class="lni lni-user"></i></a>
+            </li>
+            <li>
+              <a href="#skills"><i class="lni lni-code-alt"></i></a>
+            </li>
+            <li>
+              <a href="#projects"><i class="lni lni-briefcase"></i></a>
+            </li>
+            <li>
+              <a href="#contact"><i class="lni lni-phone"></i></a>
+            </li>
           </ul>
         </nav>
+        <div class="scrollDown" id="scrollDown">
+          <i class="lni lni-arrow-down"></i>
+        </div>
       </aside>
       <!-- INTRO -->
-      <section class="intro">
+      <section class="intro" id="intro">
         <div class="container">
           <img src="./images/profile.jpeg" alt="" class="profile-pic" />
           <div class="intro-description">
@@ -41,7 +56,7 @@
       <!-- / INTRO -->
 
       <!-- ABOUT -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <p class="section-small-header">SOME INFO</p>
           <h2>ABOUT ME</h2>
@@ -65,7 +80,7 @@
       <!-- / ABOUT -->
 
       <!-- SKILLS -->
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="container">
           <p class="section-small-header">CHECK OUT MY</p>
           <h2>SKILLS</h2>
@@ -104,7 +119,7 @@
       <!-- / SKILLS -->
 
       <!-- PROJECTS -->
-      <section class="projects">
+      <section class="projects" id="projects">
         <div class="container">
           <p class="section-small-header">TAKE A LOOK AT MY</p>
           <h2>PROJECTS</h2>
@@ -173,7 +188,7 @@
       <!-- / PROJECTS -->
 
       <!-- CONTACT -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <p class="section-small-header">SAY HELLO</p>
           <h2>CONTACT</h2>
