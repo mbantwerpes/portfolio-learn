@@ -9,6 +9,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -159,6 +160,56 @@ textarea {
   padding: 0.5em;
 }
 /* / GLOBAL STYLES */
+
+/* SIDEMENU */
+.side-menu {
+  height: 100vh;
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 6.5em;
+  left: 0;
+}
+
+.side-menu .logo {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em 0;
+  margin: 0;
+  font-size: 3em;
+  color: white;
+  font-weight: var(--fw-normal);
+  background-color: #773dc8;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  margin: 1em 0;
+  font-size: 1.3em;
+  border-radius: 1em;
+  transition: 0.25s;
+}
+.side-menu ul i {
+  padding: 0.6em 1em;
+}
+
+.side-menu ul li:hover {
+  background-color: #a67edf;
+}
+
+.side-menu i {
+  color: white;
+}
+/* / SIDEMENU */
 
 /* INTRO */
 .intro > .container {
@@ -373,6 +424,12 @@ footer p {
 
   h2 {
     margin-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .side-menu {
+    display: none;
   }
 }
 
