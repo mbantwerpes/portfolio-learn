@@ -103,6 +103,12 @@ a {
   width: 8.75em;
   margin: 0 auto;
   text-decoration: none;
+  transition: box-shadow 0.25s ease-in;
+}
+
+.btn:hover {
+  box-shadow: 0px 3px 16px rgb(189, 186, 186);
+  cursor: pointer;
 }
 
 ul {
@@ -264,11 +270,14 @@ textarea {
 
 /* SKILLS */
 .skills .card {
-  gap: 1.3em;
-  grid-template-columns: repeat(auto-fit, 4em);
+  column-gap: 2.5em;
+  row-gap: 1.3em;
+  grid-template-columns: repeat(auto-fit, 5em);
+  justify-content: center;
 }
 
 .skills .sub-card {
+  background-color: var(--card-bg-color);
   place-items: center;
   font-size: 0.5em;
 }
@@ -276,6 +285,14 @@ textarea {
 .skills .sub-card img {
   margin-top: 0.5em;
   width: 5em;
+}
+
+.skills .sub-card {
+  transition: box-shadow 0.25s ease-in;
+}
+
+.skills .sub-card:hover {
+  box-shadow: 0px 3px 16px rgb(189, 186, 186);
 }
 /* / SKILLS */
 
@@ -414,6 +431,10 @@ footer p {
 }
 
 @media only screen and (min-width: 62.5em) {
+  html {
+    font-size: 19px;
+  }
+
   .container {
     width: 75%;
   }
@@ -427,14 +448,15 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 62.5em) {
-  .side-menu {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 100.5em) {
   .container {
     width: 65%;
+  }
+}
+
+/* Do not show sidebar on mobile */
+@media only screen and (max-width: 62.5em) {
+  .side-menu {
+    display: none;
   }
 }
