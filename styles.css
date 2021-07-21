@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -231,6 +235,8 @@ textarea {
   width: 15.625em;
   height: 15.625em;
   margin-bottom: 2em;
+  object-fit: cover;
+  object-position: center;
   box-shadow: 12px 0 #d9c8f1;
 }
 
